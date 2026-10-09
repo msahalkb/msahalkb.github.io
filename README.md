@@ -1,6 +1,6 @@
 # Indra club website
 
-A plain static site (no build step, no database). Files:
+ Files:
 
 - `index.html`: page structure
 - `style.css`: look and feel
