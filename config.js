@@ -34,7 +34,7 @@ window.INDRA = {
     formUrl: "",
     embed: false,
     title: "Join Indra",
-    text: "Memberships are open for a limited time. If you want to build robots, train models and work with a team that ships, fill in the form before the deadline."
+    text: "Memberships are open for a limited time. If you want to be part of something bigger, fill in the form before the deadline."
   },
 
   /* ---------- Announcements ----------
