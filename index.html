@@ -6,8 +6,7 @@
   <title>Indra | Robotics and AI Club, CUSAT</title>
   <meta name="description" content="Indra is a student-driven club at CUSAT for robotics, automation, AI, ML and deep learning. Workshops, lectures, competitions and hands-on projects.">
   <meta name="theme-color" content="#000000">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23FFD21F'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23FFD21F'/%3E%3C/svg%3E">  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -19,12 +18,12 @@
   <div id="announcements" aria-live="polite"></div>
 
   <header class="nav">
-    <a class="brand" href="#top" aria-label="Indra home">INDRA<span class="dot">.</span></a>
+    <a class="brand" href="#top" aria-label="Indra home"><img class="logo" src="assets/logo.png" alt="Indra" width="453" height="198"></a>
     <nav aria-label="Main">
       <a href="#about">About</a>
       <a href="#events">Events</a>
       <a href="#gallery">Gallery</a>
-      <a href="#connect">Connect</a>
+      <a href="#contact">Contact</a>
       <a id="navJoin" class="btn btn-small" href="#join" hidden>Join Indra</a>
     </nav>
   </header>
@@ -115,6 +114,27 @@
           <a id="joinBtn" class="btn btn-dark" href="#" target="_blank" rel="noopener">Fill the membership form</a>
         </div>
         <div id="joinEmbed" class="embed" hidden></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-light" id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <h2>Contact us</h2>
+          <p class="lead">Questions about workshops, projects, sponsorships or joining? Send us a message and we will reply by email.</p>
+        </div>
+        <form id="contactForm" class="form" novalidate>
+          <label for="cName">Your name</label>
+          <input id="cName" name="name" type="text" autocomplete="name" required maxlength="100">
+          <label for="cEmail">Your email</label>
+          <input id="cEmail" name="email" type="email" autocomplete="email" required maxlength="150">
+          <label for="cMsg">Message</label>
+          <textarea id="cMsg" name="message" rows="5" required maxlength="2000"></textarea>
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-dark" type="submit" id="cSend">Send message</button>
+          <p id="cStatus" class="status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
 

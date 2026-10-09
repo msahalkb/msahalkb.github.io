@@ -1,12 +1,13 @@
 # Indra club website
 
- Files:
+A plain static site (no build step, no database). Files:
 
 - `index.html`: page structure
 - `style.css`: look and feel
 - `script.js`: renders events, gallery, membership and the hero arm
 - `config.js`: **the only file you edit day to day**
-- `images/gallery/`: put your photos here (create this folder next to index.html)
+- `images/gallery/`: put your photos here
+- `assets/logo.png`: the club logo shown in the header (replace this file to change it, keep the same name)
 
 ## Everyday updates (all in config.js)
 
@@ -31,3 +32,9 @@ Any static host works. Easy free options: Cloudflare Pages, Netlify or GitHub Pa
 
 - The two events and six gallery entries in `config.js` are samples. Replace them.
 - Add `email` under `social` if you want a contact button.
+
+## Contact form
+
+Messages go to the address in `contact.email` in `config.js`, using the free FormSubmit service (no account needed).
+**One-time step:** after the site is live, send yourself a test message from the form. FormSubmit emails that inbox an activation link the first time. Click it once, and every message after that arrives normally. Check the spam folder if it does not show up.
+If the form ever fails, the page shows the email address so people can write directly.
