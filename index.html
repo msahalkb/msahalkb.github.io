@@ -43,27 +43,8 @@
       </div>
 
       <div class="stage" aria-hidden="true">
-        <svg id="arm" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <circle cx="1" cy="1" r="1.4" fill="#2a2a2a"/>
-            </pattern>
-          </defs>
-          <rect width="600" height="600" fill="url(#grid)"/>
-          <g id="target">
-            <circle r="16" fill="none" stroke="#FFD21F" stroke-width="2"/>
-            <circle r="3" fill="#FFD21F"/>
-          </g>
-          <path d="M215 570 h170 l-22 -40 h-126 z" fill="#fff"/>
-          <line id="link1" stroke="#fff" stroke-width="26" stroke-linecap="round"/>
-          <line id="link2" stroke="#fff" stroke-width="20" stroke-linecap="round"/>
-          <g id="claw" stroke="#fff" stroke-width="7" stroke-linecap="round" fill="none">
-            <path d="M0 0 l16 -9 l14 6"/>
-            <path d="M0 0 l16 9 l14 -6"/>
-          </g>
-          <circle id="j0" r="13" fill="#000" stroke="#FFD21F" stroke-width="5"/>
-          <circle id="j1" r="11" fill="#000" stroke="#FFD21F" stroke-width="5"/>
-        </svg>
+        <canvas id="scan"></canvas>
+        <div class="readout"><span id="rdAngle">bearing +000</span><span id="rdPts">0 returns</span></div>
       </div>
     </section>
 
