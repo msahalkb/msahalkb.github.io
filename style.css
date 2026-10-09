@@ -161,6 +161,7 @@ dialog#lightbox::backdrop { background: rgba(0,0,0,.9); }
 
 .footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding: 28px var(--gutter); border-top: 1px solid var(--line); color: var(--grey); font-size: .95rem; }
 .footer .brand { color: #fff; font-size: 1.1rem; }
+.footer .brand .logo { height: 30px; }
 
 @media (max-width: 860px) {
   .hero { grid-template-columns: 1fr; min-height: 0; }
