@@ -24,8 +24,8 @@ window.INDRA = {
      embed:    true shows the form inside the page, false opens it in a new tab. */
   membership: {
     open: true,
-    closesOn: "2026-11-30",
-    formUrl: "",
+    closesOn: "2026-10-31",
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSca4dUVEXW1MMtlIcv6F4d2tWDdVvhl-3Eb1ebHOkkqlm1e0Q/viewform?usp=sharing&ouid=113289380718097286095",
     embed: true,
     title: "Join Indra",
     text: "Memberships are open for a limited time. If you want to build robots, train models and work with a team that ships, fill in the form before the deadline."
