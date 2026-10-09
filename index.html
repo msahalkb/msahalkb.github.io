@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Indra | Robotics and AI Club, CUSAT</title>
+  <meta name="description" content="Indra is a student-driven club at CUSAT for robotics, automation, AI, ML and deep learning. Workshops, lectures, competitions and hands-on projects.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23FFD21F'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div id="announcements" aria-live="polite"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Indra home">INDRA<span class="dot">.</span></a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#connect">Connect</a>
+      <a id="navJoin" class="btn btn-small" href="#join" hidden>Join Indra</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <p class="hero-kicker">Student club, CUSAT</p>
+        <h1>We build machines that think.</h1>
+        <p class="hero-sub">Indra is where CUSAT students learn robotics, automation and AI by building real things and taking them to competitions.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#events">See events</a>
+          <a class="btn btn-ghost" href="#about">About the club</a>
+        </div>
+      </div>
+
+      <div class="stage" aria-hidden="true">
+        <svg id="arm" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <circle cx="1" cy="1" r="1.4" fill="#2a2a2a"/>
+            </pattern>
+          </defs>
+          <rect width="600" height="600" fill="url(#grid)"/>
+          <g id="target">
+            <circle r="16" fill="none" stroke="#FFD21F" stroke-width="2"/>
+            <circle r="3" fill="#FFD21F"/>
+          </g>
+          <path d="M215 570 h170 l-22 -40 h-126 z" fill="#fff"/>
+          <line id="link1" stroke="#fff" stroke-width="26" stroke-linecap="round"/>
+          <line id="link2" stroke="#fff" stroke-width="20" stroke-linecap="round"/>
+          <g id="claw" stroke="#fff" stroke-width="7" stroke-linecap="round" fill="none">
+            <path d="M0 0 l16 -9 l14 6"/>
+            <path d="M0 0 l16 9 l14 -6"/>
+          </g>
+          <circle id="j0" r="13" fill="#000" stroke="#FFD21F" stroke-width="5"/>
+          <circle id="j1" r="11" fill="#000" stroke="#FFD21F" stroke-width="5"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div>
+          <h2>About Indra</h2>
+          <p class="lead">Indra is a student-driven club at CUSAT dedicated to advancing robotics, automation, artificial intelligence (AI), machine learning (ML) and deep learning (DL).</p>
+          <p>We foster innovation and technical expertise through workshops, lectures on emerging technologies and hands-on projects. Our initiatives include taking part in national and international competitions such as Robo Wars, and developing cutting-edge projects in robotics and AI.</p>
+          <p>We are committed to a collaborative environment that empowers students to explore and excel in automation and intelligent systems.</p>
+        </div>
+        <ul class="focus" aria-label="What we work on">
+          <li><strong>Robotics</strong><span>Design, build and drive robots for competitions and research.</span></li>
+          <li><strong>Automation</strong><span>Sensors, controllers and systems that run without a human in the loop.</span></li>
+          <li><strong>AI and ML</strong><span>Models that learn from data, from first principles to deployed projects.</span></li>
+          <li><strong>Deep learning</strong><span>Neural networks for vision, language and control.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section class="section section-light" id="events">
+      <div class="wrap">
+        <h2>Events</h2>
+        <h3 class="sub">Upcoming</h3>
+        <div id="eventsUpcoming" class="events"></div>
+        <h3 class="sub" id="pastHeading">Past</h3>
+        <div id="eventsPast" class="events"></div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" id="gallery">
+      <div class="wrap">
+        <h2>Gallery</h2>
+        <div id="galleryGrid" class="gallery"></div>
+      </div>
+    </section>
+
+    <!-- Membership (shown only while open, see config.js) -->
+    <section class="section section-accent" id="join" hidden>
+      <div class="wrap join">
+        <div>
+          <h2 id="joinTitle">Join Indra</h2>
+          <p id="joinText" class="lead"></p>
+          <p id="joinDeadline" class="deadline"></p>
+          <a id="joinBtn" class="btn btn-dark" href="#" target="_blank" rel="noopener">Fill the membership form</a>
+        </div>
+        <div id="joinEmbed" class="embed" hidden></div>
+      </div>
+    </section>
+
+    <!-- Connect -->
+    <section class="section" id="connect">
+      <div class="wrap connect">
+        <h2>Connect with us</h2>
+        <p class="lead">Follow along for project updates, event posters and results.</p>
+        <div class="links" id="socialLinks"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="brand">INDRA<span class="dot">.</span></span>
+    <span>Robotics and AI club, CUSAT</span>
+    <span id="year"></span>
+  </footer>
+
+  <dialog id="lightbox" aria-label="Photo viewer">
+    <form method="dialog"><button class="close" aria-label="Close photo">Close</button></form>
+    <img id="lightboxImg" alt="">
+    <p id="lightboxCap"></p>
+  </dialog>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
